@@ -1,0 +1,187 @@
+/*
+NOTE: 
+I prefer using HTML tag IDs for CSS styling instead of relying on the "general" HTML tags from RShiny classes. 
+While this approach may be more verbose, it ensures that CSS styles are applied consistently, even in the event of future modifications to core RShiny CSS styles (such as version updates). 
+By explicitly targeting specific HTML elements with IDs, we can maintain control over the styling of our app, reducing the risk of conflicts or unintended changes.
+*/
+
+/* Get a font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  /*     font-family: Tahoma, sans-serif; */
+  font-size: 14px;
+  /* background-color: #f3f3f3; */
+  text-align: justify;
+  font-weight: 200;
+}
+
+.container-fluid {
+  padding-left: 0px;
+}
+
+
+/*
+.col-sm-3 {
+  width: 23%;
+}
+*/
+
+
+/* Left Sidebar */
+
+#left-sidebar {
+  background-color: white;
+  /* Set background color */
+  height: auto;
+  /* width: 305px; */
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  /* overflow-y: scroll; */
+}
+
+
+#emitter-label,
+#document-label,
+#rubric-label,
+#currency-label {
+  text-align: left;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 570;
+  border-bottom: 2px solid #bdcebc;
+  width: 100%;
+}
+
+
+#emitter,
+#document,
+#rubric,
+#currency {
+  width: 300px;
+  margin: 5px;
+  background-color: white;
+}
+
+
+#document>div,
+#rubric>div,
+#currency>div {
+  font-size: 14px;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+#left-sidebar span {
+  font-weight: 200;
+}
+
+
+
+button[id^="select_all_"], button[id^="deselect_all_"], a[id^="export_"] {
+  padding: 6px 9px;
+  background-color: #1F5C98;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+a[id^="export_"] {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+button[id^="select_all_"] {
+  margin-left: 60px;
+}
+
+a[id^="export_jpg"] {
+  margin-left: 77%;
+}
+
+button[id^="select_all_"]:hover, button[id^="deselect_all_"]:hover, a[id^="export_"]:hover {
+  background-color: #2A7ACB !important;
+  color: white;
+}
+
+
+
+
+/* Main panel */
+
+.title-block {
+  text-align: left;
+  color: #555;
+  margin-top: 25px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 570;
+  border-bottom: 2px solid #bdcebc;
+  margin-bottom: 20px;
+}
+
+.subpart-title {
+  font-size: 17px;
+  font-weight: 400;
+  padding: 20px 0px 3px 0px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #bdcebc;
+  margin-top: 20px;
+}
+
+div[id^="table_"] {
+  margin-top: 15px;
+}
+
+table.dataTable thead th {
+  font-weight: 400 !important;
+}
+
+div.explanation-block {
+  /* background-color: aqua; */
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0px 20px;
+}
+
+/* Size of ticks (years) in the sliderinput for statistics by date */
+.irs-grid-text {
+  font-size: 10px;
+}
+
+.info-box {
+  background-color: #f0f7fb;
+  background-position: 9px 0px;
+  background-repeat: no-repeat;
+  border-left: solid 4px #3498db;
+  /* line-height: 14px; */
+  overflow: hidden;
+  padding: 15px;
+  font-size: 15px;
+}
