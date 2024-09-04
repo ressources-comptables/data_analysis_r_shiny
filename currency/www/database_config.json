@@ -1,7 +1,0 @@
-{
-  "host": "your_host_name",
-  "port": your_port,
-  "user": "your_user_name",
-  "password": "your_password",
-  "database": "your_database_name",
-}
