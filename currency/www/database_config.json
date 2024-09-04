@@ -1,6 +1,6 @@
 {
   "host": "your_host_name",
-  "port": 8889,
+  "port": your_port,
   "user": "your_user_name",
   "password": "your_password",
   "database": "your_database_name",
