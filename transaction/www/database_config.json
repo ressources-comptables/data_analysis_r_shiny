@@ -1,8 +1,7 @@
 {
-  "host": "localhost",
+  "host": "your_host_name",
   "port": 8889,
-  "user": "root",
-  "password": "root",
-  "database": "test_account_7",
-  "unix_socket": "/Applications/MAMP/tmp/mysql/mysql.sock"
+  "user": "your_user_name",
+  "password": "your_password",
+  "database": "your_database_name",
 }
